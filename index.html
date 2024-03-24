@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Intro</header>
+        <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#First_Steps">First Steps</a></li>
+        <li><a class="nav-link" href="#Advanced_Selectors">Advanced Selectors</a></li>
+        <li><a class="nav-link" href="#Debugging_CSS">Debugging CSS</a></li>
+        <li><a class="nav-link" href="#Organizing_your_CSS">Organizing your CSS</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <h1>Introduction</h1>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages 
+                — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. 
+                This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like,
+                 and how you can start using it to add styling to HTML.</p>
+                 <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.
+
+                    For example, you can decide to have the main heading on your page to be shown as large red text.
+                     The following code shows a very simple CSS rule that would achieve the styling described above:</p>
+                     <code>h1 {
+                        color: red;
+                        font-size: 5em;
+                      }</code>
+                      <p>Here are some quick elements in CSS!</p>
+                      <ul>
+                        <li>Border: 5px;</li>
+                        <li>Color: Green;</li>
+                        <li>Display: Flex;</li>
+                        <li>Align-Text: Center;</li>
+                        <li>Background-Color: Blue;</li>
+                      </ul>
+        </section>
+        <section class="main-section" id="First_Steps">
+            <header>First Steps</header>
+            <h1>What Is A Selector?</h1>
+            <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected
+                 to have the CSS property values inside the rule applied to them.
+                 The element or elements which are selected by the selector are referred to as the subject of the selector.</p>
+                 <code><i>h1</i> {
+                    color: blue;
+                  }
+                  </code>
+        </section>
+        <section class="main-section" id="Advanced_Selectors">
+            <header>Advanced Selectors</header>
+            <h1>What Are Advanced Selectors?</h1>
+            <p>If you have more than one thing which uses the same CSS 
+                then the individual selectors can be combined into a selector list so that the rule is applied to all of the individual selectors.
+                 For example, if I have the same CSS for an h1 and also a class of .special, I could write this as two separate rules.</p>
+                 <code>h1 {
+                    color: blue;
+                  }
+                  
+                  .special {
+                    color: blue;
+                  }</code>
+                  <p>I could also combine these into a selector list, by adding a comma between them.</p>
+                  <code>h1, .special {
+                    color: blue;
+                  }</code>
+        </section>
+        <section class="main-section" id="Debugging_CSS">
+            <header>Debugging CSS</header>
+            <h1>Debugging CSS</h1>
+            <p>Sometimes when writing CSS you will encounter an issue where your CSS doesn't seem to be doing what you expect.
+                 Perhaps you believe that a certain selector should match an element, but nothing happens, or a box is a different size than you expected.
+                  Use the DevTools included in all modern browsers
+                   can help you to find out what is going on.</p>
+        </section>
+        <section class="main-section" id="Organizing_your_CSS">
+            <header>Organizing your CSS</header>
+        <h1>Organizing your CSS</h1>
+        <p>As you start to work on larger stylesheets and big projects you will discover that maintaining a huge CSS file can be challenging.
+             In this article we will take a brief look at some best practices for writing your CSS to make it easily maintainable,
+              and some of the solutions you will find in use by others to help improve maintainability.</p>
+              <p>If you get to set the rules for the project or are working alone, then the most important thing to do is to keep things consistent.
+                 Consistency can be applied in all sorts of ways,
+                  such as using the same naming conventions for classes, choosing one method of describing color, or maintaining consistent formatting.
+                 (For example, will you use tabs or spaces to indent your code? If spaces, how many spaces?)</p>
+                 <p>There are a couple of ways you will see CSS formatted. Some developers put all of the rules onto a single line, like so:</p>
+                 <code>.box {background-color: #567895; }
+                    h2 {background-color: black; color: white; }</code>
+                    <p>Hope you enjoyed these tips!</p>
+
+
+    </section>
+    
+    <div class="Credit">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+        media="print and (resolution:300dpi)">
+        All Documentation Provided By MDN!</a> <BR>
+        <a target="_blank" id="tribute-link" href="https://github.com/YourFriendlyCoder">My Github Page</a>
+        <p><i>William Quaile 2024</i></p>
+      
+    </div>
+    </main>
+</body>
+</html>
